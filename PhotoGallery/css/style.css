@@ -1,0 +1,419 @@
+html {
+	font-size:20px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+body {
+	background-color: #7533ba;
+	color: #000;
+	margin: 0;
+	}
+h1 {
+    line-height: 70px;
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #b75aec;
+	text-shadow: 4px 4px 6px rgba(0,0,0,0.5);
+}
+h2 {
+    line-height: 50px;
+    color: #fff;
+}
+h3 {
+	line-height: 30px;
+    padding-bottom: 20px;
+}
+footer {
+	display: block;
+}
+/*--------NAV------------*/
+nav {
+	bottom: 0;
+	left: 0;
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+.menu-container{
+	top: 0;
+	left: 0;
+	height: 60px;
+	position: fixed;
+	width: 100%;
+	margin: 0% auto;
+	z-index: 100;
+	
+}
+.menu {
+	text-align: center;
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding-bottom: 15px;
+	z-index: 100;
+}
+.menu li {
+	position: relative;
+	float: center;
+	padding: 20px;
+	text-align: center;
+	margin: 0;
+	border:  2px solid white;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline;
+	color: #000;
+	background-color: #01b6ba;
+	font-family: Raleway;
+	transition-property: background;
+	transition-duration: .5s;
+	transition-delay: 0s;
+	transition-timing-function: ease-in-out;
+}
+.menu li:hover {
+	background-color: #fff;
+	color: #fff;
+	box-shadow: 
+		inset 0 0 50px #fff,      /* -inner white- */
+        inset 20px 0 80px #ffce00,   /*-- inner left yellow short */
+        inset -20px 0 80px #ff00ce,  /* inner right purple short --*/
+        inset 20px 0 300px #ffce00,  /*--- inner left yellow broad */
+        inset -20px 0 300px #ff00ce, /* inner right purple broad ---*/
+        0 0 50px #fff,            /*-- outer white */
+        -10px 0 80px #ffce00,        /*-- outer left yellow */
+        10px 0 80px #ff00ce;        /*-- outer right purple */
+}
+/*-------END NAV-------*/
+
+
+/*-------HOME----------*/
+#home {
+	background-image: url(../images/waterLilly.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	display: flex;
+	height: auto;
+	padding-top: 400px;
+	padding-bottom: 450px;
+	color: #fff;
+}
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: auto;
+	
+}
+.text-center {
+	text-align: center;	
+}
+.head-main {
+	letter-spacing: 5pt;
+	word-spacing: 25pt;
+	font-size: 5em;
+	text-align: left;
+	font-family: Lobster;
+	border: 3px dotted #ff00db;
+	padding: 0;
+	line-height: 3;
+}
+/*------END HOME-----*/
+
+
+/*--------GALLERY-------*/
+#gallery {
+	width: 100%;
+	display: inline-block;
+	height: auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	color: #fff;
+}
+.photo {
+	position: relative;
+	line-height: 0;
+	margin-bottom: 0;
+	overflow: hidden;
+	border-radius: 2px;
+	padding: 1px;
+	border: 1px dotted #fff;
+	background-color: #fff;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+	height: 169px;
+	width: 300px;
+}
+.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	border-radius: 15px;
+	margin: 0px auto;
+	background-color: #b75aec;
+	box-shadow: -3px -3px 3px 0 rgba(0,0,0,0.1), 3px 4px 12px 0 rgba(0,0,0,0.5);
+}
+p {
+    font-weight: 100;
+    line-height: 35px;
+    padding-bottom: 5px;
+}
+.photo-container {
+	text-align: center;
+	margin: 15px auto;
+	width: 300px;
+    height: 169px;
+}
+.photo-container img {
+ 	max-width: 100%;
+	width: 300px;
+	height: 169px;
+}
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	z-index: 40;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	justify-content: center; /* For centering text inside .photo-overlay */
+	align-items: center;
+	background: rgba(0,0,0, .5);
+}
+.head-three {
+	color: #b75aec;
+	margin-top: 0;
+	line-height: 20px;
+    padding-bottom: 0;
+	z-index: 40;
+}
+.photo-overlay {
+	opacity: 0;
+	transition: opacity .5s;
+	transition-timing-function: ease-in-out;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.photo-overlay p {
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	position: relative;
+}
+.photo-overlay:hover {
+	opacity: 1;
+}
+.photo img {
+	transition: transform .5s;
+	transform-origin: 50% 50%;
+}
+.photo:hover img {
+	transform: scale(2.1);
+}
+section {
+	padding-top: 50px;
+	margin-top: 50px;
+}
+/*-------END GALLERY-------*/
+	
+.clearfix:after,
+.container:after,
+.navbar:after {
+	clear: both;
+	display: table;
+	content: " ";
+}
+
+/*-------CONTACT----------*/
+.heading-padding {
+	padding-bottom: 50px;
+	color: #fff;
+}
+#contact {
+	background-image: url(../images/beeFlower.JPG);
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	display: flex;
+}
+.reservation {
+	width: 50%;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 0px auto;
+	background-color: #837190;
+	box-shadow: -2px -2px 2px 0 rgba (255,255,255, 0.5), 2px 4px 20px 0 rgba(255,255,255,0.5);
+}
+.reservation h2 {
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	color: #ffdb00;
+	font-weight: 400;
+	font-size: 1.00em;
+	letter-spacing: 1pt;
+	word-spacing: 0pt;
+}
+.reservation h2 span {
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	color: ##f6e371;
+	font-weight: 900;
+	font-size: 1.5em;
+	letter-spacing: 1.5pt;
+	word-spacing: .4pt;
+	font-family: 'Lobster', sans-serif;
+}
+.reservation p {
+	color: #fff;
+	width: 70%;
+	margin: 0 auto;
+	
+}
+.reservation form {
+	font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #ffce00;
+    padding: 12px 12px;
+    width: 70%;
+    border: 2px solid #808080;
+    margin: 2% auto;
+    border-radius: 9px;
+    background: rgb(227,222,222);
+    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'Raleway', sans-serif;
+}
+.reservation input[type="text"] {
+	font-size: 15px;
+	outline: none;
+	font-weight: 600;
+	color: #8D8E8F;
+	padding: 2% 1% 2% 7%;
+	width: 80%;
+	border-top: 1px solid #fff;
+	border-right: 2px solid #201f1b;
+	border-bottom: 2px solid #201f1b;
+	border-left: 1px solid #fff;
+	margin: 10px 1em;
+	border-radius: 7px;
+	background: #13161B;
+	box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+	font-family: 'Raleway', sans-serif;
+}
+.reservation input[type="text"]:hover {
+	box-shadow: 
+		inset 0 0 50px #fff,     
+        inset 20px 0 80px #ffce00,   
+        inset -20px 0 80px #ff00ce,  
+        inset 20px 0 300px #ffce00, 
+        inset -20px 0 300px #ff00ce, 
+        0 0 50px #fff,            
+        -10px 0 80px #ffce00,        
+        10px 0 80px #ff00ce;       
+}
+
+.form-spacer {
+	padding: 30px 39px;
+}
+
+.terms {
+	margin-top: 13%;
+	padding-left: 52px;
+	font-size: 14px;
+	line-height: 5px;
+	color: #000;
+	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+.terms:hover {
+	color: orange;
+	text-decoration: underline;
+}
+
+.terms {
+	position: relative;
+	display: inline;
+	float: right;
+}
+
+.submit input[type="submit"] {
+	color: rgb(225,225,225);
+	cursor: pointer;
+	border: none;
+	font-weight: 900;
+	outline: none;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	margin: 0px 3%;
+	padding: 7px 0px;
+	width: 25%;
+	font-size: 18px;
+	transition: border-color 0.3s color 0.3s background-color 0.3s;
+	border-radius: 7px;
+	background-color: #797a7b;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+
+.submit input[type="submit"]:hover {
+	color: #000;
+	background-color: #8D8E8F;
+	box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
+}
+/*-----END CONTACT-------*/
+
+/*--------FOOTER-------*/
+#footer {
+	color: #fff;
+	background-color: #000;
+ 	padding: 10px 10px 10px 10px;
+	text-align: right;
+}
+/*------END FOOTER-------*/
+
+@media all and (max-width:640px) and (min-width:381px) {
+    .head-main { 
+        font-size: 28px ;
+    }
+}
+@media all and (max-width:381px) and (min-width:200px) {
+    .head-main { 
+        font-size: 24px ;
+    }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
