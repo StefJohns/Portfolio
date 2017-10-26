@@ -1,0 +1,75 @@
+﻿
+<div class="jumbotron" style="margin-top: 100px;margin-bottom: 100px; height: 600px; background-color: rgba(0, 0, 0, 0.91); color: #920a0a">
+    <h1>Pick Your Toppings</h1>
+    <hr />
+    <div class="row" style="margin-top: 75px; margin-bottom: 75px;">
+        <div class="col-md-3">
+            <div class="col-header">
+                <h3>Pizza Size</h3>
+            </div>
+            <div>
+                <ul class="form" style="list-style: none; text-align: left;">
+                    <li><input type="radio" />Personal</li>
+                    <li><input type="radio" />Medium</li>
+                    <li><input type="radio" />Large</li>
+                    <li><input type="radio" />X-Large</li>
+                </ul>
+            </div>
+            <div>
+                <button>Add to Order</button>
+            </div>
+        </div>
+            <div class="col-md-3">
+                <div class="col-header">
+                    <h3>Crust</h3>
+                </div>
+                <div>
+                    <ul style="list-style: none; text-align: left;">
+                        <li><input type="radio" />Regular</li>
+                        <li><input type="radio"/>Thick</li>
+                        <li><input type="radio" />Thin</li>
+                        <li><input type="radio" />Deep Dish</li>
+                    </ul>
+                </div>
+                <div>
+                    <button>Add to Order</button>
+                </div>
+            </div>
+                <div class="col-md-3">
+                    <div class="col-header">
+                        <h3>Meat</h3>
+                    </div>
+                    <div>
+                        <ul style="list-style: none; text-align: left;">
+                            <li><input type="checkbox" />Pepperoni</li>
+                            <li><input type="checkbox" />Chicken</li>
+                            <li><input type="checkbox" />Bacon</li>
+                            <li><input type="checkbox" />Steak</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button>Add to Order</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-header">
+                        <h3>Veggies</h3>
+                    </div>
+                    <div>
+                        <ul style="list-style: none; text-align: left;">
+                            <li><input type="checkbox" />Mushroom</li>
+                            <li><input type="checkbox" />Pineapple</li>
+                            <li><input type="checkbox" />RedPepper</li>
+                            <li><input type="checkbox" />Onion</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button>Add to Order</button>
+                    </div>
+                </div>
+    </div>
+    <hr />
+    <button type="button" class="btn btn-lg btn-success">
+        @Html.ActionLink("Continue to Order", "Index", "FinalePizza")
+    </button>
+</div>
