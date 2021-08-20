@@ -1,5 +1,5 @@
 # Portfolio
-This is a portfolio of my best work.
+This is a portfolio of my best work from 2017.
 
 # SQL Database Project 
 
